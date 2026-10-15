@@ -158,3 +158,20 @@ When given a graph problem, ask:
 3. Count connected components in a disconnected undirected graph.
 
 The goal is to derive the approach and implement it independently, not memorize the code.
+
+### Graph Edge-Case Checklist
+
+Before implementing a graph algorithm, check:
+
+- [ ] **Empty graph:** Are there zero vertices (`n = 0`)?
+- [ ] **Empty edge list:** Can vertices exist even when there are no edges?
+- [ ] **Disconnected graph:** Does traversal need to cover only a source or the entire graph?
+- [ ] **Single vertex:** What happens when `n = 1`?
+- [ ] **Isolated vertices:** Are there vertices with no edges?
+- [ ] **Cycles:** Does `visited` prevent repeated exploration or infinite traversal?
+- [ ] **Repeated edges:** Can the input contain duplicate edges?
+- [ ] **Direction:** Is the graph directed or undirected?
+- [ ] **Source validity:** Is the source a valid vertex?
+
+**Note:** Not every edge case applies to every problem. Check the ones relevant to the given constraints.
+
